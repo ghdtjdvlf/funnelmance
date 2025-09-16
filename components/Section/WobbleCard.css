@@ -1,0 +1,14 @@
+body {
+  background: #000;
+}
+
+.WobbleCard1-container {
+  padding: 100px 0;
+}
+
+.grow {
+  width: 60%;
+  height: 300px;
+    transform: translate(-240px, 20px);
+  object-fit: cover;
+}
