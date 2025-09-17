@@ -1,155 +1,62 @@
+"use client";
+
 import React from "react";
-import { Timeline } from "@/components/ui/timeline";
+import { WobbleCard } from "../ui/WobbleCard";
+
+import "./Section04.css"
 
 export function Section04() {
-  const data = [
-    {
-      title: "2024",
-      content: (
-        <div>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            연 매출 50억 원을 돌파하며, 온라인 마케팅 캠페인 ROI가 전년 대비
-            220% 성장하였습니다. 퍼포먼스 마케팅과 브랜드 캠페인의 균형 전략이
-            주효했습니다.
-          </p>
-          <div className="grid grid-cols-2 gap-4">
-            <img
-              src="https://cdn.imweb.me/thumbnail/20240719/b330c6b1b823f.jpg"
-              alt="성과 이미지1"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
-            />
-            <img
-              src="https://cdn.imweb.me/thumbnail/20240719/d4f56b1a3be9f.jpg"
-              alt="성과 이미지2"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
-            />
-            <img
-              src="https://cdn.imweb.me/thumbnail/20240719/64df40f59adb9.jpg"
-              alt="성과 이미지3"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
-            />
-            <img
-              src="https://ecimg.cafe24img.com/pg1710b95308820089/udit1/web/product/big/20250826/10972799e1c7651f31706c94267dfd56.jpg"
-              alt="성과 이미지4"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
-            />
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "Early 2023",
-      content: (
-        <div>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            데이터 기반 퍼포먼스 마케팅을 강화하여 신규 고객 유입이 180% 증가,
-            월 매출이 2배 이상 성장했습니다.
-          </p>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            특히 소셜미디어 광고와 인플루언서 협업을 통해 브랜드 인지도와
-            전환율을 동시에 끌어올린 시기였습니다.
-          </p>
-          <div className="grid grid-cols-2 gap-4">
-            <img
-              src="https://ecimg.cafe24img.com/pg1710b95308820089/udit1/web/product/extra/big/20250423/cb6ccaec3d8246e760d59f10ec1af520.jpg"
-              alt="캠페인 이미지1"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
-            />
-            <img
-              src="https://ecimg.cafe24img.com/pg1710b95308820089/udit1/web/product/extra/big/20250821/d65a13060c7728349410d4aaffab43f1.png"
-              alt="캠페인 이미지2"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
-            />
-            <img
-              src="https://ecimg.cafe24img.com/pg1710b95308820089/udit1/web/product/extra/big/20250821/d65a13060c7728349410d4aaffab43f1.png"
-              alt="캠페인 이미지3"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
-            />
-            <img
-              src="https://assets.aceternity.com/cards.png"
-              alt="캠페인 이미지4"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
-            />
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "Changelog",
-      content: (
-        <div>
-          <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            신규 마케팅 채널 확장과 프로모션 런칭을 통해 매출 성과를
-            구체적으로 개선했습니다.
-          </p>
-          <div className="mb-8">
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ 신규 CRM 도입으로 재구매율 35% 상승
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ 해외 광고 캠페인 런칭 → 수출 매출 5억 원 달성
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ 대형 프로모션 이벤트 → 월간 거래액 3배 성장
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ 신규 고객 세그먼트 마케팅 → LTV(고객 생애가치) 150% 증가
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="성과 이미지1"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
-            />
-            <img
-              src="https://assets.aceternity.com/features-section.png"
-              alt="성과 이미지2"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
-            />
-            <img
-              src="https://assets.aceternity.com/pro/bento-grids.png"
-              alt="성과 이미지3"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
-            />
-            <img
-              src="https://assets.aceternity.com/cards.png"
-              alt="성과 이미지4"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60"
-            />
-          </div>
-        </div>
-      ),
-    },
-  ];
-
   return (
-    <div className="relative w-full overflow-clip">
-      <Timeline data={data} />
+    <div className="WobbleCard1-container grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+      <WobbleCard
+        containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
+        className=""
+      >
+        <div className="max-w-xs">
+          <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+            퍼널먼스 업력
+          </h2>
+          <p className="mt-4 text-left  text-base/6 text-neutral-200">
+            “2018년에 설립되어 꾸준한 성장을 이어온 저희 회사는, 현재 7년 차에
+            접어들며 안정적인 기반과 풍부한 경험을 바탕으로 한층 더 도약하고
+            있습니다.”
+          </p>
+        </div>
+        <img
+          src="https://cdn.imweb.me/thumbnail/20250908/268f087dfcab5.jpg"
+          width={400}
+          height={400}
+          alt="linear demo image"
+          className="absolute -right-4 lg:-right-[1%] grayscale filter -bottom-3 object-contain rounded-2xl"
+        />
+      </WobbleCard>
+      <WobbleCard containerClassName="col-span-1 min-h-[300px]">
+        <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+          직원 규모
+        </h2>
+        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+          “전문성과 열정을 지닌 약 60명의 직원이 한 팀이 되어 다양한 프로젝트를
+          수행하고 있습니다.”
+        </p>
+      </WobbleCard>
+      <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+        <div className="max-w-sm">
+          <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+            매출 규모/성장률
+          </h2>
+          <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+            “현재 연 매출 50억 원을 넘어서며, 해마다 200% 이상의 성장을 기록하는
+            가파른 성장 곡선을 그리고 있습니다.”
+          </p>
+        </div>
+        <img 
+          src="https://cdn.imweb.me/thumbnail/20250909/f11b5a05252ea.png"
+          width={500}
+          height={500}
+          alt="linear demo image"
+          className="grow absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-cover rounded-2xl"
+        />
+      </WobbleCard>
     </div>
   );
 }

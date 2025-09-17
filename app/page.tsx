@@ -5,23 +5,20 @@ import { Section01 } from "@/components/Section/Section01";
 import { Section02 } from "@/components/Section/Section02";
 import { Section03 } from "@/components/Section/Section03";
 import { Section04 } from "@/components/Section/Section04";
+import { SectionYear } from "@/components/Section/SectionYear";
 
-
+import Suffle from "@/components/Section/Suffle";
 import { Sparkles } from "@/components/Section/Sparkles";
-import { WobbleCard1 } from "@/components/Section/WobbleCard";
-
-
 
 const App = () => (
-   <>
-      <Header />
-     <Sparkles />
-     <Section02 />
-     <Section03 />
-      <WobbleCard1 />
-     <Section04 />
+  <>
+    <Header />
+    <Sparkles />
+    <Section02 />
+    <Section03 />
+    <Section04 />
+    <SectionYear />
+  </>
+);
 
-   </>
-)
-
-export default App
+export default App;
